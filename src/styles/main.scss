@@ -1,7 +1,12 @@
 @import "utils";
-@import "fonts";
 @import "typography";
+@import "reset";
+@import "fonts";
+@import "./header.scss";
+@import "./nav.scss";
 
 body {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 18px;
   background: $c-gray;
 }

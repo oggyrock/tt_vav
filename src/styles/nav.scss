@@ -1,0 +1,14 @@
+.nav {
+  &__list {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__link {
+    padding: 10px;
+    margin-left: 40px;
+    font-size: 24px;
+    font-weight: 300;
+    color: #4a4d4e;
+  }
+}
