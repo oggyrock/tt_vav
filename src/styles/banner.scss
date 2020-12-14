@@ -1,0 +1,19 @@
+.banner {
+  &__wrapper {
+    position: relative;
+    max-width: 1530px;
+    height: 700px;
+    margin: 0 auto;
+    padding-left: 20px;
+  }
+
+  &__header {
+    position: absolute;
+    top: 290px;
+    left: 130px;
+    font-size: 180px;
+    line-height: 90%;
+    font-weight: bold;
+    color: rgba(74, 77, 78, 0.8);
+  }
+}
