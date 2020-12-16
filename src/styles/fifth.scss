@@ -30,6 +30,7 @@
 
   &__header {
     font-size: 30px;
+    max-width: 500px;
   }
 
   &__subheader {
@@ -40,13 +41,13 @@
     display: flex;
     flex-wrap: wrap;
     margin-top: 60px;
-    margin-bottom: 120px;
+    margin-bottom: 100px;
   }
 
   &__item {
     position: relative;
     width: 200px;
-    margin: 0 30px 30px;
+    margin: 0 30px 20px;
     font-size: 20px;
     font-weight: bold;
 
