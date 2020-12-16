@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Title</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="./styles/main.scss">
   </head>
   <body>
@@ -73,9 +74,133 @@
           >
         </div>
       </section>
-      <!-- <section class="third"></section> -->
+      <section class="third">
+        <h3 class="third__header">Lorem</h3>
+        <div class="container">
+          <div class="slider-button-prev"></div>
+          <div class="third__slider swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide slide">
+                <div class="slide__head">
+                  <div class="slide__circle"></div>
+                  <span class="slide__header">Lorem<br>Ipsum</span>
+                </div>
+                <div class="slide__body">
+                  <ul class="slide__list">
+                    <li class="slide__item">It is a long established fact that a reader will be distracted</li>
+                    <li class="slide__item">The readable content</li>
+                    <li class="slide__item">There are many variations of passages</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="swiper-slide slide">
+                <div class="slide__head">
+                  <div class="slide__circle"></div>
+                  <span class="slide__header">Lorem<br>Ipsum</span>
+                </div>
+                <div class="slide__body">
+                  <ul class="slide__list">
+                    <li class="slide__item">It is a long established fact that a reader will be distracted</li>
+                    <li class="slide__item">The readable content</li>
+                    <li class="slide__item">There are many variations of passages</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="swiper-slide slide">
+                <div class="slide__head">
+                  <div class="slide__circle"></div>
+                  <span class="slide__header">Lorem<br>Ipsum</span>
+                </div>
+                <div class="slide__body">
+                  <ul class="slide__list">
+                    <li class="slide__item">It is a long established fact that a reader will be distracted</li>
+                    <li class="slide__item">The readable content</li>
+                    <li class="slide__item">There are many variations of passages</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slider-button-next"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <section class="forth">
+        <div class="forth__head">
+          <h4 class="forth__header">Lorem Ipsum is simply</h4>
+          <div class="forth__line"></div>
+        </div>
+        <ul class="forth__list">
+          <li class="forth__item">
+            <span class="forth__item-number">01</span>
+            <span class="forth__item-text">Contrary to popular belief, Lorem Ipsum</span>
+          </li>
+          <li class="forth__item">
+            <span class="forth__item-number">02</span>
+            <span class="forth__item-text">Random text it has roots in a piece of classical</span>
+          </li>
+          <li class="forth__item">
+            <span class="forth__item-number">03</span>
+            <span class="forth__item-text">Latin literature from 45 BC, making it over 2000 years old</span>
+          </li>
+          <li class="forth__item">
+            <span class="forth__item-number">04</span>
+            <span class="forth__item-text">It was popularised in the 1960s with the release</span>
+          </li>
+          <li class="forth__item">
+            <span class="forth__item-number">05</span>
+            <span class="forth__item-text">If you are going to use a passage of Lorem Ipsum</span>
+          </li>
+          <li class="forth__item">
+            <span class="forth__item-number">06</span>
+            <span class="forth__item-text">There are many variations of passages of Lorem Ipsum</span>
+          </li>
+        </ul>
+      </section>
+      <section class="fifth">
+        <div class="fifth__image-container">
+          <img
+            class="fifth__image"
+            src="./images/Rectangle 46.png"
+            alt="abstract picture"
+          >
+        </div>
+
+        <div class="fifth__block">
+          <h5 class="fifth__header">There are many variations of passages</h5>
+          <p class="fifth__subheader">of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
+          <ul class="fifth__list">
+            <li class="fifth__item">Lorem Ipsum</li>
+            <li class="fifth__item">Lorem Ipsum</li>
+            <li class="fifth__item">Lorem Ipsum</li>
+            <li class="fifth__item">Lorem Ipsum</li>
+            <li class="fifth__item">Lorem Ipsum</li>
+            <li class="fifth__item">Lorem Ipsum</li>
+          </ul>
+        </div>
+      </section>
     </main>
     <footer></footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script type="text/javascript" src="scripts/main.js"></script>
+    <script>
+      var mySwiper = new Swiper('.swiper-container', {
+        // Optional parameters
+        slidesPerView: 3,
+        spaceBetween: 30,
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: '.slider-button-next',
+          prevEl: '.slider-button-prev',
+        },
+      });
+    </script>
   </body>
 </html>
